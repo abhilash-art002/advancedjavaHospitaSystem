@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Doctor Login</title>
+<title>Admin Login</title>
 <%@include file="component/allcss.jsp"%>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -37,37 +37,52 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<img src="login-form-07/images/undraw_remotely_2j6y.svg" alt="Image"
-						class="img-fluid">
+					<img src="login-form-07/images/undraw_remotely_2j6y.svg"
+						alt="Image" class="img-fluid">
 				</div>
 				<div class="col-md-6 contents">
 					<div class="row justify-content-center">
 						<div class="col-md-8">
 							<div class="mb-4">
-								<h3>Admin Login </h3>
-								<p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente
-									sit aut eos consectetur adipisicing.</p>
+								<h3>Admin Login</h3>
+								<%
+								String sucMsg = (String) session.getAttribute("sucMsg");
+								if (sucMsg != null) {
+								%>
+								<p class="text-center text-success fs-3"><%=sucMsg%></p>
+								<%
+								session.removeAttribute("sucMsg");
+								}
+								%>
+
+								<%
+								String failMsg = (String) session.getAttribute("failMsg");
+								if (failMsg != null) {
+								%>
+								<p class="text-center text-danger fs-3"><%=failMsg%></p>
+								<%
+								session.removeAttribute("failMsg");
+								}
+								%>
+
 							</div>
-							<form action="doclogin" method="post">
+							<form action="adminLogin" method="post">
 								<div class="form-group first">
 									<label for="username">Email</label> <input type="email"
-									name="email"	class="form-control" id="useremail">
+										name="email" class="form-control" id="useremail">
 
 								</div>
 								<div class="form-group last mb-4">
 									<label for="password">Password</label> <input type="password"
-									name="password"	class="form-control" id="password">
+										name="password" class="form-control" id="password">
 
 								</div>
+								<input type="submit" value="Log In"
+									class="btn btn-block btn-primary">
 
-								<div class="d-flex mb-5 align-items-center">
-									<label class="control control--checkbox mb-0"><span
-										class="caption">Remember me</span> <input type="checkbox"
-										checked="checked" />
-										<div class="control__indicator"></div> </label> 
+
 							</form>
-							<br>Don't Have an account? <a href="signup.jsp" class="text-decoration-none">Create one</a>
-						
+
 						</div>
 					</div>
 

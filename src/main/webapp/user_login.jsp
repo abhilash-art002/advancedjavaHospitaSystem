@@ -45,10 +45,27 @@
 						<div class="col-md-8">
 							<div class="mb-4">
 								<h3>User Login </h3>
-								<p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente
-									sit aut eos consectetur adipisicing.</p>
+								<%
+								String sucMsg = (String) session.getAttribute("sucMsg");
+								if (sucMsg != null) {
+								%>
+								<p class="text-center text-success fs-3"><%=sucMsg%></p>
+								<%
+								session.removeAttribute("sucMsg");
+								}
+								%>
+
+								<%
+								String failMsg = (String) session.getAttribute("failMsg");
+								if (failMsg != null) {
+								%>
+								<p class="text-center text-danger fs-3"><%=failMsg%></p>
+								<%
+								session.removeAttribute("failMsg");
+								}
+								%>
 							</div>
-							<form action="doclogin" method="post">
+							<form action="userLogin" method="post">
 								<div class="form-group first">
 									<label for="username">Email</label> <input type="email"
 									name="email"	class="form-control" id="useremail">
