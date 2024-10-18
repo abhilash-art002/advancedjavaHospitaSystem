@@ -79,7 +79,7 @@
 
 							<input type="submit" value="Log In" class="btn btn-block btn-primary">
 						</form>
-						<br>Already Have an account? <a href="user_login.jsp" class="text-decoration-none">Create one</a>
+						<br>Already Have an account? <a href="user_login.jsp" class="text-decoration-none">Now Login</a>
 
 					</div>
 				</div>

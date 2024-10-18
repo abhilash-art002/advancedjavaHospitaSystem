@@ -8,3 +8,8 @@ today i'm pushing my part that is creating forntend for admin(navbar , index , d
 
 pranati adding my part in frontent admin module (doctor page ,edit doctorpage and view doctor page) and backend part establish the code adding the new doctor , edit/update the doctor,delete the doctor by admin <br>
 all of this was controllled by admin
+
+
+Manoj<br>
+User Appointment Form - Fronted , backend <br>
+Doctor Login, Logout - Frontend , backend <br>

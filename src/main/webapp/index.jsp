@@ -1,4 +1,3 @@
-
 <%@page import="com.db.DBConnect"%>
 <%@page import="java.sql.Connection"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -7,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Index Page</title>
+<title>Home Page</title>
 <%@include file="component/allcss.jsp" %>
 
 <style type="text/css">
@@ -27,8 +26,6 @@ Connection con = DBConnect.getConn();
         out.print("Connection failed.");
     }
 %>
-
-
 	<div id="carouselExampleIndicators" class="carousel slide">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators"

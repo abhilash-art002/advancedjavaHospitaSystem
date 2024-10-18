@@ -9,6 +9,7 @@ public class Doctor {
 	private String email;
 	private String mobileno;
 	private String password;
+	
 	public int getId() {
 		return id;
 	}
@@ -84,6 +85,13 @@ public class Doctor {
 	public Doctor() {
 		super();
 		
+	}
+	
+	@Override
+	public String toString() {
+		return "Doctor [id=" + id + ", fullname=" + fullname + ", dob=" + dob + ", qualification=" + qualification
+				+ ", specialist=" + specialist + ", email=" + email + ", mobileno=" + mobileno + ", password="
+				+ password + "]";
 	}
 	
 
