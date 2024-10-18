@@ -19,10 +19,10 @@
       
         <!-- Navigation for Guests (Not Logged In) -->
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="doctor_login.jsp"><i class="fa-solid fa-right-to-bracket"></i> Doctor Login</a>
+          <a class="nav-link active" aria-current="page" href="doctor_login.jsp"><i class="fa-solid fa-right-to-bracket"></i> Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="appointments.jsp"><i class="fa-solid fa-calendar-day"></i> Appointment</a>
+          <a class="nav-link active" aria-current="page" href="patient.jsp"><i class="fa-solid fa-calendar-day"></i> Appointment</a>
         </li>
 
       <% 
@@ -37,7 +37,7 @@
           <a class="nav-link active" aria-current="page" href="index.jsp"><i class="fa-solid fa-house"></i> Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="appointments.jsp"><i class="fa-solid fa-calendar-day"></i> View Appointments</a>
+          <a class="nav-link active" aria-current="page" href="patient.jsp"><i class="fa-solid fa-calendar-day"></i> PATIENT</a>
         </li>
         
         <div class="dropdown">
