@@ -42,8 +42,7 @@
 							<th scope="col">Appointment</th>
 							<th scope="col">Email</th>
 							<th scope="col">Mob No</th>
-							<th scope="col">Diseases</th>
-							<th scope="col">Address</th>
+							<th scope="col">Diseases</th>							
 							<th scope="col">Status</th>
 						</tr>
 					</thead>
@@ -65,7 +64,21 @@
 							<td><%=ap.getDiseases()%></td>
 							<td><%=ap.getStatus()%></td>
 							<td>
-							<a href="#" class="btn btn-success btn-sm">Comment</a>
+							
+							<%
+							if("pending".equals(ap.getStatus()))
+							{
+								%><a href="comment.jsp?id=<%=ap.getId() %>"
+								 class="btn btn-success btn-sm">Comment</a>
+								
+								<%
+							}else{%>
+							<a href="#" class="btn btn-success btn-sm disabled">Comment</a>
+								
+						<%	}
+								
+							%>
+							
 							</td>
 						</tr>
 						<%
