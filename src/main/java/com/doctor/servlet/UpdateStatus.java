@@ -1,4 +1,4 @@
-package com.user.servlet;
+package com.doctor.servlet;
 
 import java.io.IOException;
 
@@ -35,6 +35,7 @@ public class UpdateStatus extends HttpServlet{
 			}
 			
 		} catch (Exception e) {
+			e.printStackTrace();
 			
 		}
 	}

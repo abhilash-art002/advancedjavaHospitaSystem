@@ -1,8 +1,8 @@
 <%@page import="com.entity.Doctor"%>
+<%@page import="com.dao.DoctorDao"%>
 <%@page import="com.entity.Appointment"%>
 <%@page import="java.util.List"%>
 <%@page import="com.db.DBConnect"%>
-<%@page import="com.dao.DoctorDao"%>
 <%@page import="com.dao.AppointmentDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -10,7 +10,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>patient</title>
+<title>Insert title here</title>
 <%@include file="../component/allcss.jsp"%>
 <style type="text/css">
 .paint-card {
@@ -19,15 +19,6 @@
 </style>
 </head>
 <body>
-	<%
-	Object adminObj = session.getAttribute("doctObj");
-
-	if (adminObj == null) {
-		response.sendRedirect("../doctor_login.jsp");
-	}
-	%>
-
-
 	<%@include file="navbar.jsp"%>
 	<div class="col-md-12">
 		<div class="card paint-card">
@@ -41,18 +32,21 @@
 							<th scope="col">Age</th>
 							<th scope="col">Appointment</th>
 							<th scope="col">Email</th>
-							<th scope="col">Mob No</th>
-							<th scope="col">Diseases</th>							
+							<th scope="col">Mob No</th>							
+							<th scope="col">Diseases</th>
+							<th scope="col">Doctor name</th>	
+							<th scope="col">Address</th>						
 							<th scope="col">Status</th>
 						</tr>
 					</thead>
 					<tbody>
 						<%
-						Doctor d=(Doctor)session.getAttribute("doctObj");
+						
 						AppointmentDAO dao=new AppointmentDAO(DBConnect.getConn());
-						List<Appointment> list = dao.getAllAppointmentByDoctorLogin(d.getId());
+						DoctorDao dao2=new DoctorDao(DBConnect.getConn());
+						List<Appointment> list = dao.getAllAppointment();
 						for (Appointment ap : list) {
-							
+							Doctor d = dao2.getADoctorById(ap.getDoctorId());
 						%>
 						<tr>
 							<th><%=ap.getFullName()%></th>
@@ -62,24 +56,10 @@
 							<td><%=ap.getEmail()%></td>
 							<td><%=ap.getPhNo()%></td>
 							<td><%=ap.getDiseases()%></td>
+							<td><%=d.getFullname() %></td>
+							<td><%=ap.getAddress() %> </td>
 							<td><%=ap.getStatus()%></td>
-							<td>
 							
-							<%
-							if("Pending".equals(ap.getStatus()))
-							{
-								%><a href="comment.jsp?id=<%=ap.getId() %>"
-								 class="btn btn-success btn-sm">Comment</a>
-								
-								<%
-							}else{%>
-							<a href="#" class="btn btn-success btn-sm disabled">Comment</a>
-								
-						<%	}
-								
-							%>
-							
-							</td>
 						</tr>
 						<%
 						}

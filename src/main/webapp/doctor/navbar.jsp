@@ -19,7 +19,7 @@
       
         <!-- Navigation for Guests (Not Logged In) -->
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="doctor_login.jsp"><i class="fa-solid fa-right-to-bracket"></i> Home</a>
+          <a class="nav-link active" aria-current="page" href="../index.jsp"><i class="fa-solid fa-right-to-bracket"></i> Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="patient.jsp"><i class="fa-solid fa-calendar-day"></i> Appointment</a>
@@ -34,7 +34,7 @@
       
         <!-- Navigation for Doctor (Logged In) -->
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.jsp"><i class="fa-solid fa-house"></i> Home</a>
+          <a class="nav-link active" aria-current="page" href="doctor_index.jsp"><i class="fa-solid fa-house"></i> Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="patient.jsp"><i class="fa-solid fa-calendar-day"></i> PATIENT</a>
@@ -46,7 +46,7 @@
             <i class="fa-solid fa-user-circle"></i> <%= doctorFullname %>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Change Password</a></li>
+            <li><a class="dropdown-item" href="edit_profile.jsp">Edit profile</a></li>
             <li><a class="dropdown-item" href="../doctorLogout">Logout</a></li> <!-- Logout for doctor -->
           </ul>
         </div>

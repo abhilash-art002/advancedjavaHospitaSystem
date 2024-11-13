@@ -191,5 +191,153 @@ public class DoctorDao {
 				return d;
 		 		
 	}
+	 public int countDoctor() {
+		 int i=0;
+		 try {
+			 String sql="select * from doctor";
+			 PreparedStatement ps = conn.prepareStatement(sql);
+			 ResultSet rs=ps.executeQuery();
+			 while(rs.next()) {
+				 i++;
+			 }
+			
+		} catch (Exception e) {
+			
+		}
+		 return i;
+	 }
+	 public int countAppointment() {
+		 int i=0;
+		 try {
+			 String sql="select * from appointment";
+			 PreparedStatement ps = conn.prepareStatement(sql);
+			 ResultSet rs=ps.executeQuery();
+			 while(rs.next()) {
+				 i++;
+			 }
+			
+		} catch (Exception e) {
+			
+		}
+		 return i;
+	 }
+	 public int countAppointmentByDoctorID(int did) {
+		 int i=0;
+		 try {
+			 String sql="select * from appointment where doctor_id=?";
+			 PreparedStatement ps = conn.prepareStatement(sql);
+			 ps.setInt(1, did);
+			 ResultSet rs=ps.executeQuery();
+			 while(rs.next()) {
+				 i++;
+			 }
+			
+		} catch (Exception e) {
+			
+		}
+		 return i;
+	 }
+	 
+	 public int countUser() {
+		 int i=0;
+		 try {
+			 String sql="select * from user_dtls";
+			 PreparedStatement ps = conn.prepareStatement(sql);
+			 ResultSet rs=ps.executeQuery();
+			 while(rs.next()) {
+				 i++;
+			 }
+			
+		} catch (Exception e) {
+			
+		}
+		 return i;
+	 }
+	 public int countSpecialist() {
+		 int i=0;
+		 try {
+			 String sql="select * from specialist";
+			 PreparedStatement ps = conn.prepareStatement(sql);
+			 ResultSet rs=ps.executeQuery();
+			 while(rs.next()) {
+				 i++;
+			 }
+			
+		} catch (Exception e) {
+			
+		}
+		 return i;
+	 }
+	 public boolean checkOldPassword(int userId,String oldpassword) {
+			boolean f=false;
+			try {
+				String sql="select * from doctor where id=? and password=?";
+				PreparedStatement ps =conn.prepareStatement(sql);
+				ps.setInt(1, userId);
+				ps.setString(2, oldpassword);
+				
+				ResultSet rs=ps.executeQuery();
+				while(rs.next()) {
+					f=true;
+				}
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			
+			return f;
+		}
+		
+		public boolean changePassword(int userId,String newpassword) {
+			boolean f=false;
+			try {
+				String sql="update doctor set password=? where id=?";
+				PreparedStatement ps =conn.prepareStatement(sql);
+				ps.setString(1, newpassword);
+				ps.setInt(2, userId);
+				
+				int i=ps.executeUpdate();
+				if(i==1)
+				{
+					f=true;
+				}
+				
+				
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			
+			return f;
+		}
+		
+		public boolean editDoctorProfile(Doctor d)
+		{
+			boolean f=false;
+			try {
+				
+				String sql="update doctor set full_name=?, dob=?, qualifiaction=?, specialist=? mobile=? where id=?";
+				PreparedStatement ps=conn.prepareStatement(sql);
+				ps.setString(1, d.getFullname());
+				ps.setString(2, d.getDob());
+				ps.setString(3, d.getQualification());
+				ps.setString(4, d.getSpecialist());
+				
+				ps.setString(5, d.getMobileno());
+				
+				ps.setInt(6, d.getId());
+				
+				
+				int i=ps.executeUpdate();
+				if(i==1) {
+					f=true;
+					
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+			
+			return f;
+			
+		}
 
 }

@@ -20,6 +20,7 @@
 </style>
 </head>
 <body>
+
 	<%@include file="component/navbar.jsp"%>
 	
 	<div class="container-fulid backImg p-5">
