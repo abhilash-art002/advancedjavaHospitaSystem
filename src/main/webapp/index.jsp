@@ -62,13 +62,13 @@
 
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="image/video-bg.jpg" class="d-block w-100" alt="..." height="500px">
+            <img src="image/testi-bg.jpg" class="d-block w-100" alt="..." height="500px">
         </div>
         <div class="carousel-item">
             <img src="image/slider2.jpg" class="d-block w-100" alt="..." height="500px">
         </div>
         <div class="carousel-item">
-            <img src="image/testi-bg.jpg" class="d-block w-100" alt="..." height="500px">
+            <img src="image/video-bg.jpg" class="d-block w-100" alt="..." height="500px">
         </div>
     </div>
     

@@ -88,13 +88,121 @@
       margin: 0 10px;
     }
   }
+.contact-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-details, .map-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-details h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Google Map Container */
+.map-container iframe {
+margin-top: 50px;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-us-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+  
 </style>
 
 <div class="footer">
+ <div class="contact-us-container">
+            <div class="contact-details">
+                <h2>Contact Us</h2>
+                <p>Feel free to reach out to us. We're here to help!</p>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <p><strong>Email:</strong> medico@hospital.com</p>
+                    <p><strong>Phone:</strong> 6370205126 , 1234567890</p>
+                    <p><strong>Address:</strong> Jagatpur, Cuttack, Odisha</p>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="post">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input placeholder="Your Message" rows="5" required>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="map-container">
+                <h3>Our Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902726023313!2d-74.0081714844596!3d40.71277577933129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a13e1c9b91d%3A0xf7429d7f9e7d02b7!2sNew%20York%20Public%20Library!5e0!3m2!1sen!2sus!4v1678571998544!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
   <div class="container-footer">
     <p class="footer-text">
-      Give us your valuable Feedback <a href="feedback.jsp">here</a> <br> &copy; 2024 
-      <a href="#">hospital.com</a> | All Rights Reserved
+      Give us your valuable Feedback <a style="font-size: 26px;" href="feedback.jsp">HERE</a> <br> &copy; 2024 
+      hospital.com | All Rights Reserved
     </p>
     <!-- Social Media Icons -->
     <div class="social-icons">
