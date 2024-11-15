@@ -30,7 +30,7 @@
 <body>
 
 
-
+<%@include file="component/navbar.jsp"%>
 
 
 	<div class="content">

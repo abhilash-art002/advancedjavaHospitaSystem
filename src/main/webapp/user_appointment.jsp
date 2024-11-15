@@ -20,13 +20,15 @@
 }
 
 .backImg {
-	background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
-		url("img/hospital.jpg");
-	height: 20vh;
-	width: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url('image/fun-bg.jpg');
+  height: 150px; /* Adjust height as needed */
+  width: 100%;
+  background-size: cover;
+  background-position: center; /* Ensures the background is centered */
+  background-repeat: no-repeat;
 }
+
 </style>
 </head>
 <body>

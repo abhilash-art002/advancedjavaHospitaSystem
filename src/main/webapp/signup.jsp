@@ -28,7 +28,7 @@
 
 </head>
 <body>
-
+<%@include file="component/navbar.jsp"%>
 <div class="content">
 	<div class="container">
 		<div class="row">
