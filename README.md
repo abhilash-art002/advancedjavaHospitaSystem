@@ -1,1 +1,22 @@
 # advancedjavaHospitaSystem
+
+![Screenshot 2024-12-26 084600](https://github.com/user-attachments/assets/e2c1e037-6746-48e5-a7eb-26bb9288b0a0)
+![Screenshot 2024-12-26 084620](https://github.com/user-attachments/assets/03fef0dd-057b-4ef7-b966-546d5bd78f35)
+![Screenshot 2024-12-26 084630](https://github.com/user-attachments/assets/bfa9e843-cee6-42bc-adea-a029af5be7e0)
+![Screenshot 2024-12-26 084725](https://github.com/user-attachments/assets/775fd3d8-1c59-4e0d-b7bb-2b83d8a13725)
+![Screenshot 2024-12-26 084809](https://github.com/user-attachments/assets/7fd86ae7-9cd0-495f-8e81-b92128b2b5c7)
+![Screenshot 2024-12-26 084853](https://github.com/user-attachments/assets/41726137-2a32-46c0-b05b-356e8f01d962)
+![Screenshot 2024-12-26 084914](https://github.com/user-attachments/assets/bf9b9448-a659-4b74-b181-1ade396c8b80)
+![Screenshot 2024-12-26 084927](https://github.com/user-attachments/assets/ee0ad34f-3314-4135-918d-7621a981be83)
+![Screenshot 2024-12-26 084949](https://github.com/user-attachments/assets/99b801ad-4adf-4474-9cf6-41943f432840)
+![Screenshot 2024-12-26 085002](https://github.com/user-attachments/assets/a6269938-9f23-4b99-b97d-76481bb48d5c)
+![Screenshot 2024-12-26 085017](https://github.com/user-attachments/assets/f3fe4993-0dcc-40b0-af32-8cda2b05675a)
+![Screenshot 2024-12-26 085026](https://github.com/user-attachments/assets/c7b7dc43-829d-4f97-9f63-5a800c24876f)
+![Screenshot 2024-12-26 085043](https://github.com/user-attachments/assets/94833e06-0275-4b6a-9d1a-10960dc93831)
+![Screenshot 2024-12-26 085052](https://github.com/user-attachments/assets/93cfcc86-5133-450f-a4c5-059d1cc14cec)
+![Screenshot 2024-12-26 085244](https://github.com/user-attachments/assets/f7021f37-3b70-4618-8863-8d11b7c0ec27)
+![Screenshot 2024-12-26 085257](https://github.com/user-attachments/assets/7dbfd102-a1ec-4504-8157-789a63cb8cae)
+![Screenshot 2024-12-26 085310](https://github.com/user-attachments/assets/1d21d46a-b518-4f73-9d30-d0b621763125)
+![Screenshot 2024-12-26 085321](https://github.com/user-attachments/assets/b85fe371-641e-43a5-860f-35332f6d77ee)
+![Screenshot 2024-12-26 085336](https://github.com/user-attachments/assets/2ed4d637-48f5-40be-967e-49e7592b3e37)
+
